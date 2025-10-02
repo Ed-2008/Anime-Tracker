@@ -28,6 +28,35 @@
         justify-content: center;
         padding: 40px 0;
       }
+.green-btn {
+  background-color: #50C878;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.green-btn:hover {
+  background-color: #45B36D;
+}
+
+.red-btn {
+  background-color: #DC143C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.red-btn:hover {
+  background-color: #C11235;
+}
+
+      
 
       .container {
         width: 90%;
@@ -314,14 +343,7 @@
         font-weight: 500;
       }
 
-      .modal-buttons .cancel-btn {
-        background: #ddd;
-        color: #333;
-      }
-
-      .modal-buttons .cancel-btn:hover {
-        background: #ccc;
-      }
+     
     </style>
   </head>
   <body>
@@ -385,8 +407,8 @@
           </select>
 
           <div class="modal-buttons">
-            <button id="saveAnimeBtn" class="btn">Save</button>
-            <button id="closeModal" class="btn cancel-btn">Cancel</button>
+            <button id="saveAnimeBtn" class="btn green-btn">Save</button>
+            <button id="closeModal" class="btn cancel-btn red-btn">Cancel</button>
           </div>
         </div>
       </div>
@@ -594,3 +616,4 @@
     </script>
   </body>
 </html>
+
